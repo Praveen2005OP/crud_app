@@ -28,6 +28,10 @@ def home():
 def about():
     return render_template("about.html")
 
+@app.route("/contact.html")
+def about():
+    return render_template("about.html")
+
 @app.route("/delete/<int:sno>")
 def delete(sno):
     employee = Employee.query.filter_by(sno=sno).first()
