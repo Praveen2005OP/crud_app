@@ -28,9 +28,9 @@ def home():
 def about():
     return render_template("about.html")
 
-@app.route("/contact.html")
-def about():
-    return render_template("about.html")
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
 
 @app.route("/delete/<int:sno>")
 def delete(sno):
