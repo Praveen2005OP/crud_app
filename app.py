@@ -21,7 +21,7 @@ def home():
         email=request.form.get('email','').strip()
         
         if not name or not email:
-            flash("All fields are reqired", "danger")
+            flash("All fields are required", "danger")
             return redirect("/")
     
         employee = Employee(name = name, email = email)
